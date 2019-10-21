@@ -8,3 +8,8 @@ body {
 .footer {
   padding: 1rem;
 }
+
+.btn-primary:hover {
+  background-color: #ff4d4d;
+  color: white;
+}
