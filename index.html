@@ -12,17 +12,21 @@
   <link rel="stylesheet" href="https://bootswatch.com/4/minty/bootstrap.min.css">
   <!-- CUSTOM CSS -->
   <link rel="stylesheet" href="styles.css">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand navbar-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #e12c2c">
     <a class="navbar-brand" href="index.html">Hot Sauce</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarColor02">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
           <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
@@ -30,83 +34,93 @@
         <li class="nav-item">
           <a class="nav-link" href="feature.html">Features</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Bio</a>
+            <a class="dropdown-item" href="#">Contact</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Career</a>
+          </div>
         </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search">
-        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <div class="jumbotron feature-background-img pb-5 mb-0" style="color:white">
-    <h1 class="display-3" style="color:white">You need an exciting hot sauce!</h1>
-    <p class="lead" style="color:white">For too long you've been putting up with watery, vinegary, bland hot sauces that all taste and look the same – boring!</p>
-    <hr class="my-4">
-    <p> You need Bunsters Shit the Bed. Bunsters Fresh sauces are full of flavor and come in the most beautiful bottle you’ve ever seen. Once you try it you’ll throw out all the forgotten old sauces in the back of the fridge. @bunster.</p>
-    <div class="jumbotron text-center mt-0 mb-0 pt-0 pb-0" style="background-color:transparent">
-      <p class="lead mb-4" style="color:white">Sign Up for More Infomation</p>
-      <div class="d-flex justify-content-center">
-        <form action="#" class='form-inline'>
-          <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Email"/>
-          <button type="submit" class="btn btn-primary mb-2">Learn More</button>
-        </form>
-      </div>
-    </div>
+        <!-- <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li> -->
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
   </div>
-
-  <!-- <h1>Video</h1> -->
-  <div class="embed-responsive embed-responsive-16by9">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/GTW8IplsKmM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-
-  <!-- BENEFITS -->
-  <div class="container mb-5 mt-5 pb-5 pt-5">
-    <div class="row">
-      <div class="col-lg-4">
-        <h3 style="color:#ff4d4d">Safe</h3>
-        <p class="lead" style="color:black">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-        </p>
-      </div>
-      <div class="col-lg-4">
-        <h3 style="color:#ff4d4d">Healthy</h3>
-        <p class="lead" style="color:black">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-        </p>
-      </div>
-      <div class="col-lg-4">
-        <h3 style="color:#ff4d4d">Fun</h3>
-        <p class="lead" style="color:black">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-        </p>
-      </div>
-    </div>
-
-    <div class="row m-5">
-      <div class="col-lg-6 offset-lg-3">
-        <img src="https://cdn11.bigcommerce.com/s-qqb56hyrha/images/stencil/original/products/2922/8665/1130__34338.1565712812.jpg" class="img-fluid rounded">
-      </div>
-    </div>
-  </div>
-
-
-  <!-- CALL TO ACTION -->
-  <div class="jumbotron text-center mb-0">
-    <p class="lead mb-4">Sign Up for More Infomation</p>
+</nav>
+<!-- HERO -->
+<div class="jumbotron feature-background-img pb-5" style="color:white;margin:-10px">
+  <h1 class="display-3" style="color:white">You need an exciting hot sauce!</h1>
+  <p class="lead" style="color:white">For too long you've been putting up with watery, vinegary, bland hot sauces that all taste and look the same – boring!</p>
+  <hr class="my-4">
+  <p> You need Bunsters Shit the Bed. Bunsters Fresh sauces are full of flavor and come in the most beautiful bottle you’ve ever seen. Once you try it you’ll throw out all the forgotten old sauces in the back of the fridge. @bunster.</p>
+  <div class="jumbotron text-center mt-0 mb-0 pt-0 pb-0" style="background-color:transparent">
+    <p class="lead mb-4" style="color:white">Sign Up for More Infomation</p>
     <div class="d-flex justify-content-center">
       <form action="#" class='form-inline'>
         <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Email"/>
-        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+        <button type="submit" class="btn btn-primary mb-2">Learn More</button>
       </form>
     </div>
   </div>
+</div>
+
+<!-- <h1>Video</h1> -->
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/GTW8IplsKmM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<!-- BENEFITS -->
+<div class="container mb-5 mt-5 pb-5 pt-5">
+  <div class="row">
+    <div class="col-lg-4">
+      <h3 style="color:#ff4d4d">Safe</h3>
+      <p class="lead" style="color:black">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+      </p>
+    </div>
+    <div class="col-lg-4">
+      <h3 style="color:#ff4d4d">Healthy</h3>
+      <p class="lead" style="color:black">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+      </p>
+    </div>
+    <div class="col-lg-4">
+      <h3 style="color:#ff4d4d">Fun</h3>
+      <p class="lead" style="color:black">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+      </p>
+    </div>
+  </div>
+
+  <div class="row m-5">
+    <div class="col-lg-6 offset-lg-3">
+      <img src="https://cdn11.bigcommerce.com/s-qqb56hyrha/images/stencil/original/products/2922/8665/1130__34338.1565712812.jpg" class="img-fluid rounded">
+    </div>
+  </div>
+</div>
 
 
-  <!-- FOOTER -->
+<!-- CALL TO ACTION -->
+<div class="jumbotron text-center mb-0">
+  <p class="lead mb-4">Sign Up for More Infomation</p>
+  <div class="d-flex justify-content-center">
+    <form action="#" class='form-inline'>
+      <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Email"/>
+      <button type="submit" class="btn btn-primary mb-2">Submit</button>
+    </form>
+  </div>
+</div>
+
+
+<!-- FOOTER -->
 <div class="bg-secondary p-5 footer">
   &copy; 2019 Hot Sauce Inc
 </div>

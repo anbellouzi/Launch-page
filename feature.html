@@ -16,150 +16,161 @@
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand navbar-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #e12c2c">
     <a class="navbar-brand" href="index.html">Hot Sauce</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarColor02">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item ">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
         <li class="nav-item active">
-          <a class="nav-link" href="feature.html">Features  <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="feature.html">Features</a>
         </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search">
-        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Bio</a>
+            <a class="dropdown-item" href="#">Contact</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Career</a>
+          </div>
+        </li>
+        <!-- <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li> -->
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
 
-  <!-- Hero -->
-  <div class="jumbotron text-center hero-background-img">
-    <h1 class="title">Hot Sauce</h1>
-    <p class="lead">Sick of Bland Hot Sauce?</p>
-    <a href="#" class="btn btn-primary">Learn More</a>
+<!-- Hero -->
+<div class="jumbotron text-center hero-background-img">
+  <h1 class="title">Hot Sauce</h1>
+  <p class="lead">Sick of Bland Hot Sauce?</p>
+  <a href="#" class="btn btn-primary">Learn More</a>
+</div>
+
+<!-- CALL TO ACTION -->
+<div class="container">
+  <div class="row">
+    <ul class="home_list pb-5 pt-5">
+      <li class="pl-5">
+        <div class="card" style="width: 14rem;">
+          <img class="card-img-top" src='https://cdn11.bigcommerce.com/s-qqb56hyrha/images/stencil/original/products/2922/8665/1130__34338.1565712812.jpg' alt={{item.title}}>
+          <div class="card-body">
+            <h5 class="card-title">Scorned Woman Hot Sauce, 5oz.</h5>
+            <p class="card-text">Scorned Woman Hot Sauce</p>
+            <p class="card-text">$4.99</p>
+            <a href="shop/item/{{ item._id }}" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </li>
+      <li class="pl-5">
+        <div class="card" style="width: 14rem;">
+          <img class="card-img-top" src='https://cdn11.bigcommerce.com/s-qqb56hyrha/images/stencil/original/products/2922/8665/1130__34338.1565712812.jpg' alt={{item.title}}>
+          <div class="card-body">
+            <h5 class="card-title">Scorned Woman Hot Sauce, 5oz.</h5>
+            <p class="card-text">Scorned Woman Hot Sauce</p>
+            <p class="card-text">$4.99</p>
+            <a href="shop/item/{{ item._id }}" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </li>
+      <li class="pl-5">
+        <div class="card" style="width: 14rem;">
+          <img class="card-img-top" src='https://cdn11.bigcommerce.com/s-qqb56hyrha/images/stencil/original/products/2922/8665/1130__34338.1565712812.jpg' alt={{item.title}}>
+          <div class="card-body">
+            <h5 class="card-title">Scorned Woman Hot Sauce, 5oz.</h5>
+            <p class="card-text">Scorned Woman Hot Sauce</p>
+            <p class="card-text">$4.99</p>
+            <a href="shop/item/{{ item._id }}" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </li>
+      <li class="pl-5">
+        <div class="card" style="width: 14rem;">
+          <img class="card-img-top" src='https://cdn11.bigcommerce.com/s-qqb56hyrha/images/stencil/original/products/2922/8665/1130__34338.1565712812.jpg' alt={{item.title}}>
+          <div class="card-body">
+            <h5 class="card-title">Scorned Woman Hot Sauce, 5oz.</h5>
+            <p class="card-text">Scorned Woman Hot Sauce</p>
+            <p class="card-text">$4.99</p>
+            <a href="shop/item/{{ item._id }}" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </li>
+      <li class="pl-5 pt-5">
+        <div class="card" style="width: 14rem;">
+          <img class="card-img-top" src='https://cdn11.bigcommerce.com/s-qqb56hyrha/images/stencil/original/products/2922/8665/1130__34338.1565712812.jpg' alt={{item.title}}>
+          <div class="card-body">
+            <h5 class="card-title">Scorned Woman Hot Sauce, 5oz.</h5>
+            <p class="card-text">Scorned Woman Hot Sauce</p>
+            <p class="card-text">$4.99</p>
+            <a href="shop/item/{{ item._id }}" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </li>
+      <li class="pl-5 pt-5">
+        <div class="card" style="width: 14rem;">
+          <img class="card-img-top" src='https://cdn11.bigcommerce.com/s-qqb56hyrha/images/stencil/original/products/2922/8665/1130__34338.1565712812.jpg' alt={{item.title}}>
+          <div class="card-body">
+            <h5 class="card-title">Scorned Woman Hot Sauce, 5oz.</h5>
+            <p class="card-text">Scorned Woman Hot Sauce</p>
+            <p class="card-text">$4.99</p>
+            <a href="shop/item/{{ item._id }}" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </li>
+      <li class="pl-5 pt-5">
+        <div class="card" style="width: 14rem;">
+          <img class="card-img-top" src='https://cdn11.bigcommerce.com/s-qqb56hyrha/images/stencil/original/products/2922/8665/1130__34338.1565712812.jpg' alt={{item.title}}>
+          <div class="card-body">
+            <h5 class="card-title">Scorned Woman Hot Sauce, 5oz.</h5>
+            <p class="card-text">Scorned Woman Hot Sauce</p>
+            <p class="card-text">$4.99</p>
+            <a href="shop/item/{{ item._id }}" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </li>
+      <li class="pl-5 pt-5">
+        <div class="card" style="width: 14rem;">
+          <img class="card-img-top" src='https://cdn11.bigcommerce.com/s-qqb56hyrha/images/stencil/original/products/2922/8665/1130__34338.1565712812.jpg' alt={{item.title}}>
+          <div class="card-body">
+            <h5 class="card-title">Scorned Woman Hot Sauce, 5oz.</h5>
+            <p class="card-text">Scorned Woman Hot Sauce</p>
+            <p class="card-text">$4.99</p>
+            <a href="shop/item/{{ item._id }}" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </li>
+    </ul>
   </div>
 
-  <!-- CALL TO ACTION -->
-  <div class="container">
-    <div class="row">
-      <ul class="home_list pb-5 pt-5">
-          <li class="pl-5">
-            <div class="card" style="width: 14rem;">
-              <img class="card-img-top" src='https://cdn11.bigcommerce.com/s-qqb56hyrha/images/stencil/original/products/2922/8665/1130__34338.1565712812.jpg' alt={{item.title}}>
-              <div class="card-body">
-                <h5 class="card-title">Scorned Woman Hot Sauce, 5oz.</h5>
-                <p class="card-text">Scorned Woman Hot Sauce</p>
-                <p class="card-text">$4.99</p>
-                <a href="shop/item/{{ item._id }}" class="btn btn-primary">Buy Now</a>
-              </div>
-            </div>
-          </li>
-          <li class="pl-5">
-            <div class="card" style="width: 14rem;">
-              <img class="card-img-top" src='https://cdn11.bigcommerce.com/s-qqb56hyrha/images/stencil/original/products/2922/8665/1130__34338.1565712812.jpg' alt={{item.title}}>
-              <div class="card-body">
-                <h5 class="card-title">Scorned Woman Hot Sauce, 5oz.</h5>
-                <p class="card-text">Scorned Woman Hot Sauce</p>
-                <p class="card-text">$4.99</p>
-                <a href="shop/item/{{ item._id }}" class="btn btn-primary">Buy Now</a>
-              </div>
-            </div>
-          </li>
-          <li class="pl-5">
-            <div class="card" style="width: 14rem;">
-              <img class="card-img-top" src='https://cdn11.bigcommerce.com/s-qqb56hyrha/images/stencil/original/products/2922/8665/1130__34338.1565712812.jpg' alt={{item.title}}>
-              <div class="card-body">
-                <h5 class="card-title">Scorned Woman Hot Sauce, 5oz.</h5>
-                <p class="card-text">Scorned Woman Hot Sauce</p>
-                <p class="card-text">$4.99</p>
-                <a href="shop/item/{{ item._id }}" class="btn btn-primary">Buy Now</a>
-              </div>
-            </div>
-          </li>
-          <li class="pl-5">
-            <div class="card" style="width: 14rem;">
-              <img class="card-img-top" src='https://cdn11.bigcommerce.com/s-qqb56hyrha/images/stencil/original/products/2922/8665/1130__34338.1565712812.jpg' alt={{item.title}}>
-              <div class="card-body">
-                <h5 class="card-title">Scorned Woman Hot Sauce, 5oz.</h5>
-                <p class="card-text">Scorned Woman Hot Sauce</p>
-                <p class="card-text">$4.99</p>
-                <a href="shop/item/{{ item._id }}" class="btn btn-primary">Buy Now</a>
-              </div>
-            </div>
-          </li>
-          <li class="pl-5 pt-5">
-            <div class="card" style="width: 14rem;">
-              <img class="card-img-top" src='https://cdn11.bigcommerce.com/s-qqb56hyrha/images/stencil/original/products/2922/8665/1130__34338.1565712812.jpg' alt={{item.title}}>
-              <div class="card-body">
-                <h5 class="card-title">Scorned Woman Hot Sauce, 5oz.</h5>
-                <p class="card-text">Scorned Woman Hot Sauce</p>
-                <p class="card-text">$4.99</p>
-                <a href="shop/item/{{ item._id }}" class="btn btn-primary">Buy Now</a>
-              </div>
-            </div>
-          </li>
-          <li class="pl-5 pt-5">
-            <div class="card" style="width: 14rem;">
-              <img class="card-img-top" src='https://cdn11.bigcommerce.com/s-qqb56hyrha/images/stencil/original/products/2922/8665/1130__34338.1565712812.jpg' alt={{item.title}}>
-              <div class="card-body">
-                <h5 class="card-title">Scorned Woman Hot Sauce, 5oz.</h5>
-                <p class="card-text">Scorned Woman Hot Sauce</p>
-                <p class="card-text">$4.99</p>
-                <a href="shop/item/{{ item._id }}" class="btn btn-primary">Buy Now</a>
-              </div>
-            </div>
-          </li>
-          <li class="pl-5 pt-5">
-            <div class="card" style="width: 14rem;">
-              <img class="card-img-top" src='https://cdn11.bigcommerce.com/s-qqb56hyrha/images/stencil/original/products/2922/8665/1130__34338.1565712812.jpg' alt={{item.title}}>
-              <div class="card-body">
-                <h5 class="card-title">Scorned Woman Hot Sauce, 5oz.</h5>
-                <p class="card-text">Scorned Woman Hot Sauce</p>
-                <p class="card-text">$4.99</p>
-                <a href="shop/item/{{ item._id }}" class="btn btn-primary">Buy Now</a>
-              </div>
-            </div>
-          </li>
-          <li class="pl-5 pt-5">
-            <div class="card" style="width: 14rem;">
-              <img class="card-img-top" src='https://cdn11.bigcommerce.com/s-qqb56hyrha/images/stencil/original/products/2922/8665/1130__34338.1565712812.jpg' alt={{item.title}}>
-              <div class="card-body">
-                <h5 class="card-title">Scorned Woman Hot Sauce, 5oz.</h5>
-                <p class="card-text">Scorned Woman Hot Sauce</p>
-                <p class="card-text">$4.99</p>
-                <a href="shop/item/{{ item._id }}" class="btn btn-primary">Buy Now</a>
-              </div>
-            </div>
-          </li>
-      </ul>
-    </div>
+</div>
 
+
+
+<!-- CALL TO ACTION -->
+<div class="jumbotron text-center mb-0">
+  <p class="lead mb-4">Sign Up for More Infomation</p>
+  <div class="d-flex justify-content-center">
+    <form action="#" class='form-inline'>
+      <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Email"/>
+      <button type="submit" class="btn btn-primary mb-2">Submit</button>
+    </form>
   </div>
+</div>
 
 
-
-  <!-- CALL TO ACTION -->
-  <div class="jumbotron text-center mb-0">
-    <p class="lead mb-4">Sign Up for More Infomation</p>
-    <div class="d-flex justify-content-center">
-      <form action="#" class='form-inline'>
-        <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Email"/>
-        <button type="submit" class="btn btn-primary mb-2">Submit</button>
-      </form>
-    </div>
-  </div>
-
-
-  <!-- FOOTER -->
+<!-- FOOTER -->
 <div class="bg-secondary p-5 footer">
   &copy; 2019 Hot Sauce Inc
 </div>
